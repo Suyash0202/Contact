@@ -8,6 +8,7 @@ import com.example.contact.Data.entity.Contact
 abstract class ContactDatabase: RoomDatabase() {
     abstract var contactDao: ContactDao
     companion object {
+   var db: ContactDatabase? = null
 
     }
 }
